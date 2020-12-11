@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<link rel='stylesheet' href='css/style.css'>
+	</head>
+	<body>
+		<div id='pageHeader'>
+			<div id='pageTitle'>Server Test</div>
+			<div id='authenticationArea'>
+				<div id='signIn' class='userAuth'>
+					<img id='copyrightIcon' src='icons/userSignIn.svg'></img>
+					<span>Sign In</span>
+				</div>
+				<div id='signUp' class='userAuth'>
+					<img id='copyrightIcon' src='icons/userSignUp.svg'></img>
+					<span>Create Account</span>
+				</div>
+			</div>
+		</div>
+		<div id='sideMenu'>
+			<div id='sideMenuSearch' class='sideMenuItem'>
+				<img src='icons/search.svg'></img>
+				<input class='sideMenuItemText' type='text' placeholder='search'>
+			</div>
+			<div id='sideMenuHome' class='sideMenuItem'>
+				<img src='icons/home.svg'></img>
+				<span class='sideMenuItemText'>Home</span>
+			</div>
+		</div>
+		<div id='content'>
+			<div id='searchWin'>
+				<div id='searchParam'>
+					<select id='searchType' name='searchType'>
+						<option value='1'>Case 1</option>
+						<option value='2'>Case 2</option>
+						<option value='3'>Case 3</option>
+					</select>
+				</div>
+				<div id='uploadNewData'>Download</div>
+			</div>
+			<div id='resultWin'>
+				<div id='resultRowHeader' class='resultRow'>
+					<span class='resultRowIndex'>Index</span>
+					<span class='resultRowText'>Response Time</span>
+					<span class='resultRowCount'>Async Requests</span>
+					<span class='resultRowFreq'>Transport Latency</span>
+				</div>
+				<div id='resultPages'>
+					<span id='firstPage'>1</span>
+					<span id='tenPercPage'></span>
+					<span id='tenPercLastPage'></span>
+					<span id='lastPage'></span>
+				</div>
+				<div id='resultButtons'>
+					<span id='resultFirst' class='resultPageButton'>First</span>
+					<span id='resultPrevious10' class='resultPageButton'><<</span>
+					<span id='resultPrevious' class='resultPageButton'><</span>
+					<input id='resultCurPage' type='text' value=1>
+					<span id='resultNext' class='resultPageButton'>></span>
+					<span id='resultNext10' class='resultPageButton'>>></span>
+					<span id='resultLast' class='resultPageButton'>Last</span>
+				</div>
+			</div>
+		</div>
+		<div id='footer'>
+			<div id='footerMenu'>
+				<div class='footerMenuItem'>Home</div>
+				<div class='footerMenuItem'>About</div>
+			</div>
+			<div id='footerCopyright'>
+				<img id='copyrightIcon' src='icons/copyright.svg'></img>
+				<span id='copyrightText'>Copyright 2020 by Digital Umuganda. All Rights Reserved.</span>
+			</div>
+		</div>
+		<script src='js/script.js'></script>
+	</body>
+</html>
