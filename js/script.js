@@ -18,7 +18,7 @@ getDataStats = () => {
 getReqParams = () => {
 	var reqParams = 'case=' + document.getElementById('searchType').value;
 	var reqParams = reqParams + '&time=' + 60; //total time to run the server test
-	var reqParams = reqParams + '&reqPerMin=' + 10; //requests per minute
+	var reqParams = reqParams + '&reqPerMin=' + 100; //requests per minute
 	var reqParams = reqParams + '&asyncReq=' + 1; //Concurrent requests
 	var reqParams = reqParams + '&minAsyncReq=' + 1;
 	var reqParams = reqParams + '&maxAsyncReq=' + 10;

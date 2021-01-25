@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const url = require('url');
-const path = require('path');
 const testServer = require('./testServer');
 const queryString = require('querystring');
 
@@ -69,7 +68,8 @@ getRequestedData = (data, res) => {
 	requestedData = {'totalNGrams':0};
 	res.statusCode = 200;
 	res.setHeader('Content-Type', 'application/json');
-	testServer.getTestResult(getReqParam(data), res);
+	runTest = new testServer.serverTests(getReqParam(data), res)
+	runTest.getTestResult();
 }
 
 
@@ -93,9 +93,10 @@ getReqParam = (reqData) => {
 			timeSec: data.time,
 			reqPerMin: data.reqPerMin,
 			asyncReq: data.asyncReq,
-			reqFreq: (60 / data.reqPerMin) * 1000
+			minAsyncReq: data.asyncReq,
+			reqFreq: (60 * 1000 * data.asyncReq) / data.reqPerMin
 		}
 	};
-
+	
 	return {'opts':opts, 'reqDtls':reqDtls};
 }
