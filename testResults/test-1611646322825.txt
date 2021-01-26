@@ -1,0 +1,9 @@
+Test performed At: Tue Jan 26 2021 09:32:02 GMT+0200 (South Africa Standard Time)
+Test ended At: Tue Jan 26 2021 09:33:02 GMT+0200 (South Africa Standard Time)
+Test lasted for: 60074 MilliSeconds
+Sent request: 90
+Received request: 90
+Successful request(returned a 200 status code): 90
+Failed request: 0
+Average Response Time was: 454.57 MilliSeconds
+

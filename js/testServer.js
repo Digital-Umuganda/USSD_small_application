@@ -21,30 +21,30 @@ module.exports.serverTests = class serverTests {
     this.serverResData = [];
     this.totalReq = 0;
     this.testStartedTime = 0;
+    this.reqDtls = this.reqData['reqDtls'];
   }
 
   getTestResult = () => {
     this.testStartedTime = new Date().getTime();
     var initTime = (this.testStartedTime / 1000).toFixed(0);
-    var reqDtls = this.getReqDtlsFreq(this.reqData['reqDtls']);
-    var reqFreq = reqDtls.reqFreq
+    this.getReqDtlsFreq();
     
     var reqTimer = setInterval(() => {
       process.stdout.clearLine();
       process.stdout.cursorTo(0);
       var elapsedTime = (new Date().getTime() / 1000).toFixed(0);
-      var percReqSent = ((elapsedTime - initTime) * 100 / reqFreq.timeSec).toFixed(1);
+      var percReqSent = ((elapsedTime - initTime) * 100 / this.reqDtls.reqFreq.timeSec).toFixed(1);
       process.stdout.write( 'Running Performance Test..\t' + percReqSent + '%\t');
-      if (reqFreq.timeSec > elapsedTime - initTime) {
-        reqDtls = this.getReqDtlsAsync(this.reqData['reqDtls']);
-        for (var i = 0; i < reqFreq.asyncReq && i < reqFreq.minAsyncReq; i++) {
+      if (this.reqDtls.reqFreq.timeSec > elapsedTime - initTime) {
+        this.getReqDtlsAsync();
+        for (var i = 0; i < this.reqDtls.reqFreq.asyncReq && i < this.reqDtls.reqFreq.minAsyncReq; i++) {
           this.sendRequest();
         }
       } else {
         clearInterval(reqTimer);
         this.logResults();
       }
-    }, reqDtls.reqFreq.reqFreq);
+    }, this.reqDtls.reqFreq.reqFreq);
   }
   
   
@@ -70,67 +70,79 @@ module.exports.serverTests = class serverTests {
   }
   
   
-  getReqDtlsFreq = (reqDtls) => {
-    if (reqDtls.case == 1) {
-      reqDtls.reqFreq.asyncReq = 1;
-      reqDtls.reqFreq.minAsyncReq = 1;
-    } else if (reqDtls.case == 2) {
-      reqDtls.reqFreq.reqFreq = (60 * 1000) * asyncReq / reqDtls.reqFreq.reqPerMin;
-      reqDtls.reqFreq.asyncReq = 10;
-      reqDtls.reqFreq.minAsyncReq = 10;
-    } else if (reqDtls.case == 3) {
-      reqDtls.reqFreq.minAsyncReq = 1;
-      reqDtls.reqFreq.asyncReq = Math.floor(Math.random() * 10) + 1;
+  getReqDtlsFreq = () => {
+    if (this.reqDtls.case == 1) {
+      this.reqDtls.reqFreq.asyncReq = 1;
+      this.reqDtls.reqFreq.minAsyncReq = 1;
+    } else if (this.reqDtls.case == 2) {
+      this.reqDtls.reqFreq.reqFreq = (60 * 1000) * this.reqDtls.reqFreq.asyncReq / this.reqDtls.reqFreq.reqPerMin;
+      this.reqDtls.reqFreq.asyncReq = 10;
+      this.reqDtls.reqFreq.minAsyncReq = 10;
+    } else if (this.reqDtls.case == 3) {
+      this.reqDtls.reqFreq.minAsyncReq = 1;
+      this.reqDtls.reqFreq.asyncReq = Math.floor(Math.random() * 10) + 1;
     }
-    return reqDtls;
   }
   
   
-  getReqDtlsAsync = (reqDtls) => {
-    var reqFreq = reqDtls.reqFreq;
-    if (reqDtls.case == 1) {
-      reqFreq.reqPerMin = 100;
-    } else if (reqDtls.case == 2) {
-      reqFreq.reqPerMin = 50;
-      reqFreq.asyncReq = 10;
-      reqFreq.minAsyncReq = 10;
-    } else if (reqDtls.case == 3) {
+  getReqDtlsAsync = () => {
+    if (this.reqDtls.case == 1) {
+      this.reqDtls.reqFreq.reqPerMin = 100;
+    } else if (this.reqDtls.case == 2) {
+      this.reqDtls.reqFreq.reqPerMin = 50;
+      this.reqDtls.reqFreq.asyncReq = 10;
+      this.reqDtls.reqFreq.minAsyncReq = 10;
+    } else if (this.reqDtls.case == 3) {
       minAsyncReq = queryString.parse(req)['minAsyncReq'];
       maxAsyncReq = queryString.parse(req)['maxAsyncReq'];
-      reqFreq.asyncReq = Math.floor(Math.random() * maxAsyncReq) + minAsyncReq;
-      if (reqFreq.asyncReq < minAsyncReq)
-        reqFreq.asyncReq = minAsyncReq;
-      if (reqDtls.asyncReq > maxAsyncReq)
-        reqFreq.asyncReq = maxAsyncReq;
+      this.reqDtls.reqFreq.asyncReq = Math.floor(Math.random() * maxAsyncReq) + minAsyncReq;
+      if (this.reqDtls.reqFreq.asyncReq < minAsyncReq)
+      this.reqDtls.reqFreq.asyncReq = minAsyncReq;
+      if (this.reqDtls.reqFreq.asyncReq > maxAsyncReq)
+      this.reqDtls.reqFreq.asyncReq = maxAsyncReq;
     }
-    reqDtls.reqFreq = reqFreq;
-    return reqDtls;
   }
 
 
   logResults = () => {
-    var totalReqTime = 0;
-    var testData = '';
+    var logPath = './testResults/', logReqPath = logPath + 'requests details/'
+    var data = this.getLogData();
+    fs.writeFile(logPath + 'test-' + this.testStartedTime + '.txt', data['stats'], (err) => {
+      if (err) throw err;
+      console.log('\nTest Done.\nResults logged into "' + logPath + 'test-' + this.testStartedTime + '.txt"')
+    });
+    if (this.reqDtls.logRequests) {
+      fs.writeFile(logReqPath + 'testReqs-' + this.testStartedTime + '.txt', data['reqData'], (err) => {
+        if (err) throw err;
+        console.log('Requests details logged into "' + logReqPath + 'testReqs-' + this.testStartedTime + '.txt"\n')
+      });
+    }
+  }
+
+
+  getLogData = () => {
+    var totalReqTime = 0, successReq = 0, failedReq = 0, totalRequests = this.serverResData.length;
+    var reqData = '';
     this.serverResData.forEach((value, index, array) => {
       var reqResTime = value.receivedTime - value.sentTime;
       totalReqTime += reqResTime;
-      testData += index + '.)\t- Request sent at: ' + this.getTimeFormat(value.sentTime) + '\n';
-      testData += '\t- Response received at: ' + this.getTimeFormat(value.receivedTime) + '\n';
-      testData += '\t- Request response Time: ' + reqResTime + ' MilliSeconds\n\n';
+      reqData += (index + 1) + '.)\t- Request sent at: ' + this.getTimeFormat(value.sentTime) + '\n';
+      reqData += '\t- Response received at: ' + this.getTimeFormat(value.receivedTime) + '\n';
+      reqData += '\t- Request response Time: ' + reqResTime + ' MilliSeconds\n';
+      reqData += '\t- Request response: ' + value.status + ' \n\n';
+      successReq += (value.status == 200) ? 1 : 0
+      failedReq += (value.status != 200) ? 1 : 0
     });
     var testEndedAt = new Date().getTime();
     var stats = 'Test performed At: ' + new Date(this.testStartedTime) + '\n';
     stats += 'Test ended At: ' + new Date(testEndedAt) + '\n';
     stats += 'Test lasted for: ' + String(testEndedAt - this.testStartedTime) + ' MilliSeconds\n';
-    stats += 'Test sent request: ' + this.totalReq + '\n';
-    stats += 'Test received request: ' + this.serverResData.length + '\n';
-    stats += 'Average Response Time was: ' + (totalReqTime / this.serverResData.length).toFixed(2) + ' MilliSeconds\n\n';
-    stats += testData;
-    fs.writeFile('./testResults/test-' + this.testStartedTime + '.txt', stats, (err) => {
-      if (err) 
-        throw err;
-      console.log('\nTest Done.\nResults logged into "test-' + this.testStartedTime + '.txt"\n')
-    });
+    stats += 'Sent request: ' + this.totalReq + '\n';
+    stats += 'Received request: ' + totalRequests + '\n';
+    stats += 'Successful request(returned a 200 status code): ' + successReq + '\n';
+    stats += 'Failed request: ' + failedReq + '\n';
+    stats += 'Average Response Time was: ' + (totalReqTime / totalRequests).toFixed(2) + ' MilliSeconds\n\n';
+    return {'stats': stats, 'reqData': stats + reqData};
   }
 
 

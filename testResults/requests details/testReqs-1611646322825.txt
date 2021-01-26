@@ -1,0 +1,459 @@
+Test performed At: Tue Jan 26 2021 09:32:02 GMT+0200 (South Africa Standard Time)
+Test ended At: Tue Jan 26 2021 09:33:02 GMT+0200 (South Africa Standard Time)
+Test lasted for: 60074 MilliSeconds
+Sent request: 90
+Received request: 90
+Successful request(returned a 200 status code): 90
+Failed request: 0
+Average Response Time was: 454.57 MilliSeconds
+
+1.)	- Request sent at: 0/26/121, 9:32:8:846
+	- Response received at: 0/26/121, 9:32:8:946
+	- Request response Time: 100 MilliSeconds
+	- Request response: 200 
+
+2.)	- Request sent at: 0/26/121, 9:32:8:861
+	- Response received at: 0/26/121, 9:32:8:951
+	- Request response Time: 90 MilliSeconds
+	- Request response: 200 
+
+3.)	- Request sent at: 0/26/121, 9:32:8:859
+	- Response received at: 0/26/121, 9:32:8:953
+	- Request response Time: 94 MilliSeconds
+	- Request response: 200 
+
+4.)	- Request sent at: 0/26/121, 9:32:8:861
+	- Response received at: 0/26/121, 9:32:8:953
+	- Request response Time: 92 MilliSeconds
+	- Request response: 200 
+
+5.)	- Request sent at: 0/26/121, 9:32:8:860
+	- Response received at: 0/26/121, 9:32:8:956
+	- Request response Time: 96 MilliSeconds
+	- Request response: 200 
+
+6.)	- Request sent at: 0/26/121, 9:32:8:859
+	- Response received at: 0/26/121, 9:32:8:957
+	- Request response Time: 98 MilliSeconds
+	- Request response: 200 
+
+7.)	- Request sent at: 0/26/121, 9:32:8:860
+	- Response received at: 0/26/121, 9:32:8:962
+	- Request response Time: 102 MilliSeconds
+	- Request response: 200 
+
+8.)	- Request sent at: 0/26/121, 9:32:8:858
+	- Response received at: 0/26/121, 9:32:9:932
+	- Request response Time: 1074 MilliSeconds
+	- Request response: 200 
+
+9.)	- Request sent at: 0/26/121, 9:32:8:857
+	- Response received at: 0/26/121, 9:32:9:956
+	- Request response Time: 1099 MilliSeconds
+	- Request response: 200 
+
+10.)	- Request sent at: 0/26/121, 9:32:8:857
+	- Response received at: 0/26/121, 9:32:9:963
+	- Request response Time: 1106 MilliSeconds
+	- Request response: 200 
+
+11.)	- Request sent at: 0/26/121, 9:32:14:839
+	- Response received at: 0/26/121, 9:32:14:900
+	- Request response Time: 61 MilliSeconds
+	- Request response: 200 
+
+12.)	- Request sent at: 0/26/121, 9:32:14:840
+	- Response received at: 0/26/121, 9:32:14:901
+	- Request response Time: 61 MilliSeconds
+	- Request response: 200 
+
+13.)	- Request sent at: 0/26/121, 9:32:14:840
+	- Response received at: 0/26/121, 9:32:14:932
+	- Request response Time: 92 MilliSeconds
+	- Request response: 200 
+
+14.)	- Request sent at: 0/26/121, 9:32:14:841
+	- Response received at: 0/26/121, 9:32:14:938
+	- Request response Time: 97 MilliSeconds
+	- Request response: 200 
+
+15.)	- Request sent at: 0/26/121, 9:32:14:840
+	- Response received at: 0/26/121, 9:32:14:939
+	- Request response Time: 99 MilliSeconds
+	- Request response: 200 
+
+16.)	- Request sent at: 0/26/121, 9:32:14:841
+	- Response received at: 0/26/121, 9:32:14:939
+	- Request response Time: 98 MilliSeconds
+	- Request response: 200 
+
+17.)	- Request sent at: 0/26/121, 9:32:14:842
+	- Response received at: 0/26/121, 9:32:14:940
+	- Request response Time: 98 MilliSeconds
+	- Request response: 200 
+
+18.)	- Request sent at: 0/26/121, 9:32:14:840
+	- Response received at: 0/26/121, 9:32:14:945
+	- Request response Time: 105 MilliSeconds
+	- Request response: 200 
+
+19.)	- Request sent at: 0/26/121, 9:32:14:841
+	- Response received at: 0/26/121, 9:32:14:945
+	- Request response Time: 104 MilliSeconds
+	- Request response: 200 
+
+20.)	- Request sent at: 0/26/121, 9:32:14:840
+	- Response received at: 0/26/121, 9:32:14:950
+	- Request response Time: 110 MilliSeconds
+	- Request response: 200 
+
+21.)	- Request sent at: 0/26/121, 9:32:20:849
+	- Response received at: 0/26/121, 9:32:20:909
+	- Request response Time: 60 MilliSeconds
+	- Request response: 200 
+
+22.)	- Request sent at: 0/26/121, 9:32:20:849
+	- Response received at: 0/26/121, 9:32:20:916
+	- Request response Time: 67 MilliSeconds
+	- Request response: 200 
+
+23.)	- Request sent at: 0/26/121, 9:32:20:849
+	- Response received at: 0/26/121, 9:32:20:920
+	- Request response Time: 71 MilliSeconds
+	- Request response: 200 
+
+24.)	- Request sent at: 0/26/121, 9:32:20:849
+	- Response received at: 0/26/121, 9:32:20:921
+	- Request response Time: 72 MilliSeconds
+	- Request response: 200 
+
+25.)	- Request sent at: 0/26/121, 9:32:20:849
+	- Response received at: 0/26/121, 9:32:20:921
+	- Request response Time: 72 MilliSeconds
+	- Request response: 200 
+
+26.)	- Request sent at: 0/26/121, 9:32:20:850
+	- Response received at: 0/26/121, 9:32:20:921
+	- Request response Time: 71 MilliSeconds
+	- Request response: 200 
+
+27.)	- Request sent at: 0/26/121, 9:32:20:849
+	- Response received at: 0/26/121, 9:32:20:922
+	- Request response Time: 73 MilliSeconds
+	- Request response: 200 
+
+28.)	- Request sent at: 0/26/121, 9:32:20:850
+	- Response received at: 0/26/121, 9:32:20:931
+	- Request response Time: 81 MilliSeconds
+	- Request response: 200 
+
+29.)	- Request sent at: 0/26/121, 9:32:20:850
+	- Response received at: 0/26/121, 9:32:20:936
+	- Request response Time: 86 MilliSeconds
+	- Request response: 200 
+
+30.)	- Request sent at: 0/26/121, 9:32:20:850
+	- Response received at: 0/26/121, 9:32:20:937
+	- Request response Time: 87 MilliSeconds
+	- Request response: 200 
+
+31.)	- Request sent at: 0/26/121, 9:32:26:852
+	- Response received at: 0/26/121, 9:32:26:896
+	- Request response Time: 44 MilliSeconds
+	- Request response: 200 
+
+32.)	- Request sent at: 0/26/121, 9:32:26:851
+	- Response received at: 0/26/121, 9:32:26:899
+	- Request response Time: 48 MilliSeconds
+	- Request response: 200 
+
+33.)	- Request sent at: 0/26/121, 9:32:26:851
+	- Response received at: 0/26/121, 9:32:26:900
+	- Request response Time: 49 MilliSeconds
+	- Request response: 200 
+
+34.)	- Request sent at: 0/26/121, 9:32:26:852
+	- Response received at: 0/26/121, 9:32:26:902
+	- Request response Time: 50 MilliSeconds
+	- Request response: 200 
+
+35.)	- Request sent at: 0/26/121, 9:32:26:852
+	- Response received at: 0/26/121, 9:32:26:903
+	- Request response Time: 51 MilliSeconds
+	- Request response: 200 
+
+36.)	- Request sent at: 0/26/121, 9:32:26:851
+	- Response received at: 0/26/121, 9:32:26:907
+	- Request response Time: 56 MilliSeconds
+	- Request response: 200 
+
+37.)	- Request sent at: 0/26/121, 9:32:26:851
+	- Response received at: 0/26/121, 9:32:26:910
+	- Request response Time: 59 MilliSeconds
+	- Request response: 200 
+
+38.)	- Request sent at: 0/26/121, 9:32:26:852
+	- Response received at: 0/26/121, 9:32:26:912
+	- Request response Time: 60 MilliSeconds
+	- Request response: 200 
+
+39.)	- Request sent at: 0/26/121, 9:32:26:852
+	- Response received at: 0/26/121, 9:32:26:914
+	- Request response Time: 62 MilliSeconds
+	- Request response: 200 
+
+40.)	- Request sent at: 0/26/121, 9:32:26:853
+	- Response received at: 0/26/121, 9:32:26:922
+	- Request response Time: 69 MilliSeconds
+	- Request response: 200 
+
+41.)	- Request sent at: 0/26/121, 9:32:32:866
+	- Response received at: 0/26/121, 9:32:32:916
+	- Request response Time: 50 MilliSeconds
+	- Request response: 200 
+
+42.)	- Request sent at: 0/26/121, 9:32:32:865
+	- Response received at: 0/26/121, 9:32:32:919
+	- Request response Time: 54 MilliSeconds
+	- Request response: 200 
+
+43.)	- Request sent at: 0/26/121, 9:32:32:867
+	- Response received at: 0/26/121, 9:32:32:920
+	- Request response Time: 53 MilliSeconds
+	- Request response: 200 
+
+44.)	- Request sent at: 0/26/121, 9:32:32:867
+	- Response received at: 0/26/121, 9:32:32:920
+	- Request response Time: 53 MilliSeconds
+	- Request response: 200 
+
+45.)	- Request sent at: 0/26/121, 9:32:32:866
+	- Response received at: 0/26/121, 9:32:32:929
+	- Request response Time: 63 MilliSeconds
+	- Request response: 200 
+
+46.)	- Request sent at: 0/26/121, 9:32:32:867
+	- Response received at: 0/26/121, 9:32:32:929
+	- Request response Time: 62 MilliSeconds
+	- Request response: 200 
+
+47.)	- Request sent at: 0/26/121, 9:32:32:867
+	- Response received at: 0/26/121, 9:32:32:930
+	- Request response Time: 63 MilliSeconds
+	- Request response: 200 
+
+48.)	- Request sent at: 0/26/121, 9:32:32:868
+	- Response received at: 0/26/121, 9:32:32:933
+	- Request response Time: 65 MilliSeconds
+	- Request response: 200 
+
+49.)	- Request sent at: 0/26/121, 9:32:32:866
+	- Response received at: 0/26/121, 9:32:32:935
+	- Request response Time: 69 MilliSeconds
+	- Request response: 200 
+
+50.)	- Request sent at: 0/26/121, 9:32:32:868
+	- Response received at: 0/26/121, 9:32:32:935
+	- Request response Time: 67 MilliSeconds
+	- Request response: 200 
+
+51.)	- Request sent at: 0/26/121, 9:32:38:878
+	- Response received at: 0/26/121, 9:32:38:923
+	- Request response Time: 45 MilliSeconds
+	- Request response: 200 
+
+52.)	- Request sent at: 0/26/121, 9:32:38:877
+	- Response received at: 0/26/121, 9:32:38:929
+	- Request response Time: 52 MilliSeconds
+	- Request response: 200 
+
+53.)	- Request sent at: 0/26/121, 9:32:38:879
+	- Response received at: 0/26/121, 9:32:38:930
+	- Request response Time: 51 MilliSeconds
+	- Request response: 200 
+
+54.)	- Request sent at: 0/26/121, 9:32:38:879
+	- Response received at: 0/26/121, 9:32:38:930
+	- Request response Time: 51 MilliSeconds
+	- Request response: 200 
+
+55.)	- Request sent at: 0/26/121, 9:32:38:880
+	- Response received at: 0/26/121, 9:32:38:934
+	- Request response Time: 54 MilliSeconds
+	- Request response: 200 
+
+56.)	- Request sent at: 0/26/121, 9:32:38:878
+	- Response received at: 0/26/121, 9:32:38:934
+	- Request response Time: 56 MilliSeconds
+	- Request response: 200 
+
+57.)	- Request sent at: 0/26/121, 9:32:38:878
+	- Response received at: 0/26/121, 9:32:38:935
+	- Request response Time: 57 MilliSeconds
+	- Request response: 200 
+
+58.)	- Request sent at: 0/26/121, 9:32:38:879
+	- Response received at: 0/26/121, 9:32:38:942
+	- Request response Time: 63 MilliSeconds
+	- Request response: 200 
+
+59.)	- Request sent at: 0/26/121, 9:32:38:877
+	- Response received at: 0/26/121, 9:32:38:943
+	- Request response Time: 66 MilliSeconds
+	- Request response: 200 
+
+60.)	- Request sent at: 0/26/121, 9:32:38:878
+	- Response received at: 0/26/121, 9:32:38:945
+	- Request response Time: 67 MilliSeconds
+	- Request response: 200 
+
+61.)	- Request sent at: 0/26/121, 9:32:44:884
+	- Response received at: 0/26/121, 9:32:45:79
+	- Request response Time: 195 MilliSeconds
+	- Request response: 200 
+
+62.)	- Request sent at: 0/26/121, 9:32:44:882
+	- Response received at: 0/26/121, 9:32:45:80
+	- Request response Time: 198 MilliSeconds
+	- Request response: 200 
+
+63.)	- Request sent at: 0/26/121, 9:32:44:883
+	- Response received at: 0/26/121, 9:32:45:81
+	- Request response Time: 198 MilliSeconds
+	- Request response: 200 
+
+64.)	- Request sent at: 0/26/121, 9:32:44:882
+	- Response received at: 0/26/121, 9:32:45:81
+	- Request response Time: 199 MilliSeconds
+	- Request response: 200 
+
+65.)	- Request sent at: 0/26/121, 9:32:44:883
+	- Response received at: 0/26/121, 9:32:45:82
+	- Request response Time: 199 MilliSeconds
+	- Request response: 200 
+
+66.)	- Request sent at: 0/26/121, 9:32:44:884
+	- Response received at: 0/26/121, 9:32:45:82
+	- Request response Time: 198 MilliSeconds
+	- Request response: 200 
+
+67.)	- Request sent at: 0/26/121, 9:32:44:884
+	- Response received at: 0/26/121, 9:32:45:151
+	- Request response Time: 267 MilliSeconds
+	- Request response: 200 
+
+68.)	- Request sent at: 0/26/121, 9:32:44:883
+	- Response received at: 0/26/121, 9:32:45:152
+	- Request response Time: 269 MilliSeconds
+	- Request response: 200 
+
+69.)	- Request sent at: 0/26/121, 9:32:44:882
+	- Response received at: 0/26/121, 9:32:45:152
+	- Request response Time: 270 MilliSeconds
+	- Request response: 200 
+
+70.)	- Request sent at: 0/26/121, 9:32:44:881
+	- Response received at: 0/26/121, 9:32:45:153
+	- Request response Time: 272 MilliSeconds
+	- Request response: 200 
+
+71.)	- Request sent at: 0/26/121, 9:32:50:888
+	- Response received at: 0/26/121, 9:32:53:209
+	- Request response Time: 2321 MilliSeconds
+	- Request response: 200 
+
+72.)	- Request sent at: 0/26/121, 9:32:50:888
+	- Response received at: 0/26/121, 9:32:53:210
+	- Request response Time: 2322 MilliSeconds
+	- Request response: 200 
+
+73.)	- Request sent at: 0/26/121, 9:32:50:889
+	- Response received at: 0/26/121, 9:32:53:210
+	- Request response Time: 2321 MilliSeconds
+	- Request response: 200 
+
+74.)	- Request sent at: 0/26/121, 9:32:50:889
+	- Response received at: 0/26/121, 9:32:53:359
+	- Request response Time: 2470 MilliSeconds
+	- Request response: 200 
+
+75.)	- Request sent at: 0/26/121, 9:32:50:889
+	- Response received at: 0/26/121, 9:32:53:360
+	- Request response Time: 2471 MilliSeconds
+	- Request response: 200 
+
+76.)	- Request sent at: 0/26/121, 9:32:50:889
+	- Response received at: 0/26/121, 9:32:53:360
+	- Request response Time: 2471 MilliSeconds
+	- Request response: 200 
+
+77.)	- Request sent at: 0/26/121, 9:32:50:889
+	- Response received at: 0/26/121, 9:32:53:361
+	- Request response Time: 2472 MilliSeconds
+	- Request response: 200 
+
+78.)	- Request sent at: 0/26/121, 9:32:50:889
+	- Response received at: 0/26/121, 9:32:53:361
+	- Request response Time: 2472 MilliSeconds
+	- Request response: 200 
+
+79.)	- Request sent at: 0/26/121, 9:32:50:890
+	- Response received at: 0/26/121, 9:32:53:361
+	- Request response Time: 2471 MilliSeconds
+	- Request response: 200 
+
+80.)	- Request sent at: 0/26/121, 9:32:50:889
+	- Response received at: 0/26/121, 9:32:53:362
+	- Request response Time: 2473 MilliSeconds
+	- Request response: 200 
+
+81.)	- Request sent at: 0/26/121, 9:32:56:897
+	- Response received at: 0/26/121, 9:32:57:514
+	- Request response Time: 617 MilliSeconds
+	- Request response: 200 
+
+82.)	- Request sent at: 0/26/121, 9:32:56:898
+	- Response received at: 0/26/121, 9:32:57:515
+	- Request response Time: 617 MilliSeconds
+	- Request response: 200 
+
+83.)	- Request sent at: 0/26/121, 9:32:56:898
+	- Response received at: 0/26/121, 9:32:57:515
+	- Request response Time: 617 MilliSeconds
+	- Request response: 200 
+
+84.)	- Request sent at: 0/26/121, 9:32:56:899
+	- Response received at: 0/26/121, 9:32:57:516
+	- Request response Time: 617 MilliSeconds
+	- Request response: 200 
+
+85.)	- Request sent at: 0/26/121, 9:32:56:898
+	- Response received at: 0/26/121, 9:32:57:516
+	- Request response Time: 618 MilliSeconds
+	- Request response: 200 
+
+86.)	- Request sent at: 0/26/121, 9:32:56:897
+	- Response received at: 0/26/121, 9:32:57:517
+	- Request response Time: 620 MilliSeconds
+	- Request response: 200 
+
+87.)	- Request sent at: 0/26/121, 9:32:56:897
+	- Response received at: 0/26/121, 9:32:57:517
+	- Request response Time: 620 MilliSeconds
+	- Request response: 200 
+
+88.)	- Request sent at: 0/26/121, 9:32:56:896
+	- Response received at: 0/26/121, 9:32:57:518
+	- Request response Time: 622 MilliSeconds
+	- Request response: 200 
+
+89.)	- Request sent at: 0/26/121, 9:32:56:899
+	- Response received at: 0/26/121, 9:32:57:519
+	- Request response Time: 620 MilliSeconds
+	- Request response: 200 
+
+90.)	- Request sent at: 0/26/121, 9:32:56:898
+	- Response received at: 0/26/121, 9:32:58:387
+	- Request response Time: 1489 MilliSeconds
+	- Request response: 200 
+

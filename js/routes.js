@@ -89,6 +89,7 @@ getReqParam = (reqData) => {
 	const reqDtls = {
 		output: data.output,
 		case: data.case,
+		logRequests: data.logIndividualReq,
 		reqFreq: {
 			timeSec: data.time,
 			reqPerMin: data.reqPerMin,
