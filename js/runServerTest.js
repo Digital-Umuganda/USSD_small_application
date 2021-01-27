@@ -8,20 +8,20 @@ const testServer = require('./testServer');
 const hostname = '127.0.0.1';
 const port = 3000;
 
-//remember to log these into the log files
+
 const data = {
 	'case':'2',
 	'time':'60', //total time to run the server test
-	'reqPerMin':'10000', //requests per minute
-	'asyncReq':'50', //Concurrent requests
-	'minAsyncReq':'1',
-	'maxAsyncReq':'10',
+	'reqPerMin':'1000', //requests per minute
+	'asyncReq':'20', //Concurrent requests
+	'minAsyncReq':'10',
+	'maxAsyncReq':'50',
 	'serverAddr':'10.10.77.252',
 	'serverPort':'8088',
-	'remotePath':'/mbazaussd/ussd',//make sure the path doesn't end with a '/'
+	'remotePath':'/mbazaussd/ussd', //make sure the path doesn't end with a '/'
 	'method':'GET',
 	'output':'Web',
-	'logIndividualReq':'false'
+	'logIndividualReq':'1' //logs individual requests details if set to 1 (true)
 }
 
 const server = http.createServer((req, res) => {
@@ -29,6 +29,7 @@ const server = http.createServer((req, res) => {
 });
 
 
+//Remember to validate input
 getReqParam = (data) => {
 	const opts = {
 		host: data.serverAddr,
@@ -43,13 +44,14 @@ getReqParam = (data) => {
 
 	const reqDtls = {
 		output: data.output,
-		case: data.case,
-		logRequests: data.logIndividualReq,
+		case: Number(data.case),
+		logRequests: Number(data.logIndividualReq),
 		reqFreq: {
-			timeSec: data.time,
-			reqPerMin: data.reqPerMin,
-			asyncReq: data.asyncReq,
-			minAsyncReq: data.asyncReq,
+			timeSec: Number(data.time),
+			reqPerMin: Number(data.reqPerMin),
+			asyncReq: Number(data.asyncReq),
+			minAsyncReq: Number(data.minAsyncReq),
+			maxAsyncReq: Number(data.maxAsyncReq),
 			reqFreq: (60 * 1000 * data.asyncReq) / data.reqPerMin
 		}
 	};

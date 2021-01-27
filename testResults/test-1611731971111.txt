@@ -1,0 +1,23 @@
+Test Category: Perfomance Test
+case(scenario): 3
+Test duration: 60 Seconds
+Requests per minute: 1000
+Asynchronous requests: 26.9
+Asynchronous requests clusters: 32
+Minimum asynchronous requests: 10
+Maximum asynchronous requests: 50
+Server address: 10.10.77.252
+Server port: 8088
+Request URL path: /mbazaussd/ussd
+Request method: GET
+Individual requests details logged: 1
+
+Test performed At: Wed Jan 27 2021 09:19:31 GMT+0200 (South Africa Standard Time)
+Test ended At: Wed Jan 27 2021 09:20:30 GMT+0200 (South Africa Standard Time)
+Test lasted for: 59857 MilliSeconds
+Sent request: 862
+Received request: 557
+Successful request(returned a 200 status code): 0
+Failed request: 557
+Average Response Time was: 21129.14 MilliSeconds
+

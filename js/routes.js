@@ -73,6 +73,7 @@ getRequestedData = (data, res) => {
 }
 
 
+//Remember to validate input
 getReqParam = (reqData) => {
 	data = queryString.parse(reqData);
 	const opts = {
@@ -88,13 +89,14 @@ getReqParam = (reqData) => {
 
 	const reqDtls = {
 		output: data.output,
-		case: data.case,
-		logRequests: data.logIndividualReq,
+		case: Number(data.case),
+		logRequests: Number(data.logIndividualReq),
 		reqFreq: {
-			timeSec: data.time,
-			reqPerMin: data.reqPerMin,
-			asyncReq: data.asyncReq,
-			minAsyncReq: data.asyncReq,
+			timeSec: Number(data.time),
+			reqPerMin: Number(data.reqPerMin),
+			asyncReq: Number(data.asyncReq),
+			minAsyncReq: Number(data.minAsyncReq),
+			maxAsyncReq: Number(data.maxAsyncReq),
 			reqFreq: (60 * 1000 * data.asyncReq) / data.reqPerMin
 		}
 	};
